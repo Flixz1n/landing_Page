@@ -7,6 +7,6 @@ menuToggle.addEventListener('click', () => {
 })
 
 
-// $('.toggle').click(function(){
-//   $('.nav').slideToggle();
-// })
+$('.toggle').click(function(){
+  $('.nav').slideToggle();
+})
