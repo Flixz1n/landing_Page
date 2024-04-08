@@ -19,7 +19,7 @@
     transition: 0.5s;
     z-index: 2;
   
-    .active {
+    .showcase, .active {
         right: 300px;
         }
 }
@@ -40,14 +40,14 @@ header {
         position: relative;
         width: 60px;
         height: 60px;
-        background: url(../img/toggle.png);
+        background: url(../src/img/toggle.png);
         background-repeat: no-repeat;
         background-size: 30px;
         background-position: center;
         cursor: pointer;
 
-        .active {
-            background: url(../img/fechar.png);
+        .toggle, .active {
+            background: url(../src/img/fechar.png);
             background-repeat: no-repeat;
             background-size: 25px;
             background-position: center;
@@ -70,7 +70,7 @@ header {
     width: 100%;
     min-height: 100vh;
     padding: 0 100px;
-    background-image: url(../img/coach-carter.jpg);
+    background-image: url(../../src/img/coach-carter.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -109,12 +109,13 @@ header {
     left: calc(50% - 250px / 2);
     width: 250px;
     height: 150px;
-    background-image: url(../img/20126074.jpg);
+    background-image: url(../../src/img/20126074.jpg);
     background-size: cover;
     cursor: pointer;
     animation: animate 25s linear infinite;
+}
 
-    @keyframes animate{
+@keyframes animate{
     0%,100%
     {
         background-position: top;
@@ -125,7 +126,7 @@ header {
     }
 }
 
-    &__links {
+    .social {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -135,8 +136,9 @@ header {
         align-items: center;
         flex-direction: column;
 
-        &__item {
+        &__links {
             list-style: none;
+            margin: 0 5px;
 
             a {
                 text-decoration: none;
@@ -148,7 +150,7 @@ header {
             }
         }
     }
-}
+
 
 .menu {
     position: absolute;
@@ -159,24 +161,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-
-//     &__links {
-//         position: relative;
-
-//         &__item {
-//             list-style: none;
-
-//             a {
-//                 text-decoration: none;
-//                 font-size: 24px;
-//                 color: #111;
-
-//                 &:hover {
-//                     color: #03a9f4;
-//                 }
-//             }
-//         }
-//     }
 }
 
 .menu ul
