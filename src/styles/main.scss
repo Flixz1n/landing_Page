@@ -16,7 +16,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #111;
   transition: 0.5s;
   z-index: 2;
 }
@@ -76,11 +75,12 @@ header {
     cursor: pointer;
 }
 
-.toggle .active {
+.--active {
     background: url(../../src/img/fechar.png);
     background-repeat: no-repeat;
     background-size: 25px;
     background-position: center;
+    filter: invert(1);
     cursor: pointer;
 }
 
