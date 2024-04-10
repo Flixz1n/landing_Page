@@ -7,23 +7,23 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.showcase {
-    position: absolute;
-    right: 0;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #111;
-    transition: 0.5s;
-    z-index: 2;
-  
-    .showcase, .active {
-        right: 300px;
-        }
+.showcase
+{
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  transition: 0.5s;
+  z-index: 2;
 }
-
+.showcase.active
+{
+  right: 300px;
+}
 
 header {
     position: absolute;
@@ -36,25 +36,25 @@ header {
     padding: 40px 100px;
     z-index: 1000;
 
-    .toggle{
-        position: relative;
-        width: 60px;
-        height: 60px;
-        background: url(../src/img/toggle.png);
-        background-repeat: no-repeat;
-        background-size: 30px;
-        background-position: center;
-        cursor: pointer;
+    // .toggle{
+    //     position: relative;
+    //     width: 60px;
+    //     height: 60px;
+    //     background: url(../src/img/toggle.png);
+    //     background-repeat: no-repeat;
+    //     background-size: 30px;
+    //     background-position: center;
+    //     cursor: pointer;
 
-        .toggle, .active {
-            background: url(../src/img/fechar.png);
-            background-repeat: no-repeat;
-            background-size: 25px;
-            background-position: center;
-            filter: invert(1);
-            cursor: pointer;
-        }
-    }
+    //     .toggle, .active {
+    //         background: url(../src/img/fechar.png);
+    //         background-repeat: no-repeat;
+    //         background-size: 25px;
+    //         background-position: center;
+    //         filter: invert(1);
+    //         cursor: pointer;
+    //     }
+    // }
 
     a{
         max-width: 120px;
@@ -63,6 +63,25 @@ header {
             max-width: 100%;
         }
     }
+}
+
+.toggle{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: url(../../src/img/toggle.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+}
+
+.toggle .active {
+    background: url(../../src/img/fechar.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    cursor: pointer;
 }
 
 .hero {
@@ -85,7 +104,7 @@ header {
             font-weight: 400;
             font-size: 2.5em;
             letter-spacing: 0.1em;
-            color: #fff;
+            color: #000000;
             
             span{
                 font-weight: 800;
@@ -97,7 +116,7 @@ header {
             font-weight: 300;
             letter-spacing: 0.02em;
             line-height: 1.5em;
-            color: #fff;
+            color: #000000;
             margin: 15px 0 35px;
         }
     }
